@@ -1,0 +1,89 @@
+p {
+    color:rgb(46, 0, 87);
+    size: 100px;
+    font-family:sans-serif;
+}
+
+img {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#navbar {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    position: fixed;
+    z-index: 10000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgb(110, 43, 255),rgb(217, 114, 255));
+    box-sizing:border-box;
+
+}
+
+.navbar-link {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height:4;
+}
+
+.navbar-link:hover {
+    background-image: linear-gradient(rgb(81, 0, 255) 0%, rgb(21, 0, 106) 60%);
+}
+
+html {
+    background-image: linear-gradient(5deg, rgb(97, 0, 91) 0%, rgb(38, 0, 190) 60%);
+    background-repeat:no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+}
+
+
+
+
+main {
+    margin: 5%;
+    padding: 5%;
+    padding-top: 8vw;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Funny shaking text*/
+@keyframes shaking {
+  0% {top: 0px; left: 0px}
+  25% {top: -1px; left: 2px}
+  50% {top: 1px; left: 2px}
+  75% {top: 2px; left: -1px}
+  100% {top: -1px; left: -2px}
+  
+}
+.shake {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    animation-name: shaking;
+    animation-duration: 0.05s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+}
