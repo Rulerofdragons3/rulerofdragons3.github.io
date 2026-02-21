@@ -12,6 +12,10 @@ img {
     max-height: 100%;
 }
 
+img.borderless {
+    border-style: none;
+}
+
 #navbar {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:white;
@@ -23,7 +27,7 @@ img {
     top: 0;
     right: 0;
     width: 100%;
-    background-image: linear-gradient(180deg, rgb(110, 43, 255),rgb(217, 114, 255));
+    background-image: linear-gradient(180deg, rgb(15, 0, 67), rgb(76, 0, 103));
     box-sizing:border-box;
 
 }
@@ -39,7 +43,8 @@ img {
 }
 
 .navbar-link:hover {
-    background-image: linear-gradient(rgb(81, 0, 255) 0%, rgb(21, 0, 106) 60%);
+    background-image: linear-gradient(180deg, rgb(9, 0, 40),rgb(46, 0, 63));
+    border-radius: 5px;
 }
 
 html {
@@ -55,14 +60,17 @@ html {
     left: 50%;
     transform: translate(-50%, 0%);
     position: relative;
+    text-align: center;
+}
+
+.justify-right {
+    text-align: right;
 }
 
 
-
-
 main {
-    margin: 5%;
-    padding: 5%;
+    margin: 2.5%;
+    padding: 2.5%;
     padding-top: 8vw;
     background-color: aliceblue;
     border: none;
@@ -86,4 +94,10 @@ main {
     animation-duration: 0.05s;
     animation-iteration-count: infinite;
     animation-timing-function: step-end;
+}
+
+.organization-table {
+    margin-left: 0%;
+    margin-right: 100%;
+    width: 100%;
 }
