@@ -1,0 +1,28 @@
+html {
+    background-image: 
+    /*url("https://media1.tenor.com/m/rW2YcU3S83AAAAAC/enbabyfazball-fish.gif")*/
+    url("https://media1.tenor.com/m/L6TGpGm20N0AAAAd/underwater-adrians-worm.gif")
+    ;
+    background-repeat:repeat;
+    background-size:cover;
+    background-position: 0%;
+    background-attachment:local;
+}
+
+main {
+    margin: 2.5%;
+    padding: 2.5%;
+    padding-top: 8vw;
+    background-color: rgba(0, 195, 255, 0.75);
+    border: none;
+    border-radius: 5px;
+}
+
+.imgCaptionCont {
+    margin: 1.5%;
+    padding: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(189, 240, 255);
+    border: none;
+    border-radius: 15px;
+}
