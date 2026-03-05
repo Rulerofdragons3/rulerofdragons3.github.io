@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Game</title>
+    <link rel = "stylesheet" href="/css/main.css">
+    <link rel = "stylesheet" href="hungry-games.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <main id="start-page">
+        <img src="/assets/The Hungry Game.png" class="borderless"></img>
+        <p>
+            Welcome to the hungry game. Please enter two or
+            more characters to start the simulation.
+        </p>
+
+        <div id="character-creator">
+
+        </div>  
+
+        <button id="add-char">Add Character</button>
+        <button id="remove-char">Remove Character</button>
+        <br><br>
+        <p>
+            (Prelude)<br>
+            This unfortunate cast of character(s) has been dropped into
+            a complete nightmare... Who will come on top? It's up to the
+            RNG machine to decide... Everyone is ready to fight for their
+            lives, the only thing left to do is to:
+        </p>
+        <button id="start">Sound the horn!</button>
+    </main>
+    <!-- Look, I know this is cursed but let's just roll with it.-->
+    <main id="game" hidden>
+        <img src="/assets/The Hungry Game.png" class="borderless"></img>
+        <div id="story-list">
+            <p class="outcome">Example Outcome</p>
+        </div>
+        <div id="results">
+            <h1 class="center">Results</h1>
+        </div>
+        <button class="center" id="proceed">Proceed to next day</button>
+        <br>
+        <button class="center" id="restart" hidden>Restart</button>
+    </main>
+
+    
+    <script type="module" src="character-creator.js"></script>
+    <script type="module" src="simulation.js"></script>
+    <script src="/js/main.js"></script>
+</body>

@@ -1,0 +1,63 @@
+div#character-creator {
+    background-color: bisque;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:flex-start;
+    height: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+div.character-entry {
+    background-color: rgb(255, 190, 93);
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    max-height: 20px;
+}
+
+input {
+    background-color: bisque;
+    width: 150px;
+}
+
+/* Generated Page */
+div#story-list {
+    background-color: bisque;
+    padding: 5px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.outcome {
+    color:black;
+    background-color: rgb(255, 210, 133);
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+div#results {
+    background-color: slategray;
+    padding: 5px;
+}
+
+b {
+    color: orangered;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.red-glow {
+    text-shadow: 
+    0px 0px 10px red,
+    0px 0px 10px red,
+    0px 0px 10px red;
+    color:red;
+}
