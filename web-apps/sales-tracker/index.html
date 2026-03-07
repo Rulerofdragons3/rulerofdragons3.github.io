@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tracker</title>
+    <link rel = "stylesheet" href="/css/main.css">
+    <link rel = "stylesheet" href="sales-tracker.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="theme-selector"></div>
+    <main>
+        <img class="center borderless" src="/assets/Deals Page.png"></img>
+        <div id="spamton-dialogue-box">
+            <img id="spamton" src="/assets/spamton/spamton.png" class="borderless" height="50px"></img>
+            <p id="spamton-dialogue">DEALS SO GOOD I'LL [$!$$] MYSELF</p>
+        </div>
+        
+        <div class="container freebies">
+            <h2 class="center"><span class="shake">GIVEAWAYS!!!</span></h2>
+            <table id="freebies"></table>
+        </div>
+        <a href="https://itch.io/games/new-and-popular/free" target="_blank" rel="noopener noreferrer">
+            Also you can check this page out too.
+        </a>
+
+        <div class="container best">
+            <h2 class="center">Best Sales</h2>
+            <table id="best"></table>
+        </div>
+
+        <div class="container bargains">
+            <h2 class="center">Bargain Bin</h2>
+            <table id="bargains"></table>
+        </div>
+        <p>Data provided by <a href="https://www.cheapshark.com">cheapshark.com</a>.</p>
+    </main>
+    <script src="/js/main.js"></script>
+    <script src="./updater.js"></script>
+    <script src="./spamton-controller.js"></script>
+</body>

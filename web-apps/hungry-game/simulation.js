@@ -27,16 +27,18 @@ function weightedRandom(characters) {
         sumOfWeights += c.killWeight;
     });
     // Select a random number between 1 and total.
-    var random = Math.ceil(Math.random() * sumOfWeights);
+    var rand = Math.ceil(Math.random() * sumOfWeights);
     //
     var selector = 0;
-    for (var i = 0; i < characters.length - 1; i++)
+    for (var i = 0; i < characters.length; i++) {
         selector += characters[i].killWeight;
-        if (selector >= random) {
+        if (rand <= characters[i].killWeight) {
             return characters[i];
         }
-    
-    return characters[0]; //This should never trigger.
+    }
+    //This should never trigger.
+    console.log("This triggered!")
+    return characters[0]; 
 }
 
 function pushToLog(txt) {
@@ -79,8 +81,8 @@ function generateResults(contestants) {
                 const victimIndex = contestants.indexOf(selection)
                 // Logs data
                 const toLog = selectRandomFromArray(interactionsJSON.PVPKills)
-                    .replace("%k",`<b>${Killer.name}</b>`)
-                    .replace("%v",`<b>${selection.name}</b>`);
+                    .replaceAll("%k",`<b>${Killer.name}</b>`)
+                    .replaceAll("%v",`<b>${selection.name}</b>`);
                 pushToLog(`⚔️\t| ${toLog}`)
                 dead.push(selection);
                 // Remove victim from array.
@@ -93,7 +95,7 @@ function generateResults(contestants) {
                 // Logs death
                 pushToLog(`☠️\t| ${
                     selectRandomFromArray(interactionsJSON.SelfInducedKills)
-                    .replace("%v",`<b>${victim.name}</b>`)
+                    .replaceAll("%v",`<b>${victim.name}</b>`)
                 }`);
                 dead.push(victim);
                 // Remove victim from array.
@@ -102,7 +104,7 @@ function generateResults(contestants) {
             case 2: // Idle interactions
                 pushToLog(`❔\t| ${
                     selectRandomFromArray(interactionsJSON.IdleInteractions)
-                    .replace("%c",`<b>${selectRandomFromArray(contestants).name}</b>`)
+                    .replaceAll("%c",`<b>${selectRandomFromArray(contestants).name}</b>`)
                 }`);
                 break;
             case 3: // P2P interactions
@@ -110,15 +112,15 @@ function generateResults(contestants) {
                 const c2 = selectRandomFromArray(contestants.filter((c) => c !== c1));
                 pushToLog(`💞\t| ${
                     selectRandomFromArray(interactionsJSON.P2PInteractions)
-                    .replace("%a", `<b>${c1.name}</b>`)
-                    .replace("%b", `<b>${c2.name}</b>`)
+                    .replaceAll("%a", `<b>${c1.name}</b>`)
+                    .replaceAll("%b", `<b>${c2.name}</b>`)
                 }`);
                 break;
             case 4: // Events
                 const eventeeIndex = Math.floor(Math.random() * (contestants.length));
                 const eventee = contestants[eventeeIndex]; // The one who will be affected by the event.
                 const event = selectRandomFromArray(interactionsJSON.Events);
-                pushToLog(`‼️\t| ${event.text.replace("%c",`<b>${eventee.name}</b>`)}`);
+                pushToLog(`‼️\t| ${event.text.replaceAll("%c",`<b>${eventee.name}</b>`)}`);
                 contestants[eventeeIndex].killWeight += event.alterKillChance;
                 break;
         } 

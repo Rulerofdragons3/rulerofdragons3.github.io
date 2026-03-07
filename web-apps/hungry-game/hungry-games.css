@@ -61,3 +61,9 @@ b {
     0px 0px 10px red;
     color:red;
 }
+
+.ping {
+  background-color: rgb(96, 69, 145);
+  color: rgb(233, 229, 241);
+  border-radius: 5px;
+}

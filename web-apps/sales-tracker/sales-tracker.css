@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'determination'; /* A name you choose to use later */
+  src: url('/assets/spamton/DeterminationMonoWebRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Determines how the font is displayed while loading */
+}
+
+.steam-sale {
+    background-color: #4c6b22;
+    color: #beee11;
+    width: 5px;    
+}
+
+td {
+    color: var(--text-color-light);
+    background-color: var(--text-color-dark);
+    padding: 10px;
+}
+
+.container {
+    margin-top: 50px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    width: 100%;
+    border-style:solid;
+    background-color: var(--color-secondary);
+}
+table {
+    width: 100%;
+}
+
+div#spamton-dialogue-box {
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+}
+
+img#spamton {
+    float:left;
+    padding-right: 5px;
+    height: 90px;
+    max-width: 100px;
+    transform: scaleX(-1);
+}
+
+p#spamton-dialogue {
+    color: white;
+    height: 60px;
+    font-family: 'determination', sans-serif;
+    font-size: large;
+}
+
+main {
+    background-color: darkgreen;
+}
+
+html {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZGpjYW0wODVxaWE2czhrZnRiMDBxYzh0bjhsNjcycW14aWUwdHhybSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/UurMzl2Xbo7AuVigoh/200w.gif");
+    background-repeat:repeat;
+    background-size:auto;
+    background-position: 0%;
+    background-attachment:scroll;
+    background-color: var(--color-primary);
+}

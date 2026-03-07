@@ -10,7 +10,7 @@
         "%k lightly punches %v!",
         "%k detonates %v's prostate massager!",
         "%v succumbs to %k's aura (stank).",
-        "%v challenges %k, but loses!",
+        "%v challenges %k to a duel, but loses!",
         "%k escorts %v to the realm of the dead!",
         "%v was jorking their peanits until they realized %k had stoled their penor!",
         "%v steps into %k's lag machine!",
@@ -22,8 +22,8 @@
         "%k jeff the kills %v!",
         "%k killed %v at 3AM! (not clickbait)",
         "%k put %v in a springlock suit.",
-        "%k shattered %v's kneecaps (and then some).",
-        "%k cancelled %v on Twitter (X [Twitter])!",
+        "%k shattered %v's kneecaps (and then some)!",
+        "%k cancelled %v on Twitter (Formerly X [Formerly Twitter])!",
         "Dear %v, you are died now. Love %k.",
         "%k shows %v what it's really like to be spineless!",
         "%k puts %v in the femur breaker!",
@@ -31,10 +31,11 @@
         "%k put %v to \"\"\"sleep.\"\"\"",
         "%k sleeps with %v's mother!",
         "%k sleeps with %v's father!",
-        "%k leaks %v's grind pics!",
-        "%k emotes on %v's corpse!",
+        "%k leaks %v's grind pics!<br>%v dies of embarassment!",
+        "%k hits a no-scope and emotes on %v's corpse!",
         "%k steals %v's genitals!",
-        "%k <b class=\"red-glow\">genocided</b> %v!"
+        "%k <b class=\"red-glow\">genocided</b> %v!",
+        "%v and %k form a suicide pact!<br>...Only %v goes through with it."
     ],
     "SelfInducedKills" : [
         "%v fell off (a cliff).",
@@ -61,7 +62,7 @@
         "%v was struck down by the pharoh's curse!",
         "*nuzzles %v's corpsey worpsey*",
         "%v comes to the realization that maybe nightshade is not part of a balanced diet.",
-        "@%v skill issue",
+        "<b class=ping>@%v</b> skill issue",
         "dead.push(%v);",
         "%v attempted to pet the Rabbit of Caerbannog!",
         "Get well soon %v!",
@@ -70,7 +71,9 @@
         "%v ate the cafeteria food at a public school!",
         "%v can't think of something funny to say here and dies.",
         "%v dies of dysentery.",
-        "Ever heard of the player %v? He was destroyed!"
+        "Ever heard of the player %v? He was destroyed!",
+        "We sold %v due to budget cuts.",
+        "%v succumbs to untreated injuries!"
     ],
     "IdleInteractions1": [
         "%c.. i remember you're <b class=\"red-glow\">genocides.</b>"
@@ -99,7 +102,7 @@
         "%c, with heavy eyes, goes to sleep.",
         "%c was selected to appear in this line of text!",
         "Like a drifter, %c was born to walk alone.",
-        "%c visits https://rulerofdragons3.github.io.",
+        "%c visits https://rulerofdragons3.github.io!",
         "%c suggests coconuts are migratory.",
         "%c's mother was a hampster, and father smelt of elderberries!",
         "I'm rooting for you, %c!",
@@ -112,7 +115,13 @@
         "Tick tock, %c.",
         "Annoyingly, %c avoids certain death.",
         "No don't do it %c!",
-        "%c.. i remember you're <b class=\"red-glow\">genocides.</b>"
+        "%c.. i remember you're <b class=\"red-glow\">genocides.</b>",
+        "%c is hungry!",
+        "%c is both hungry, and in a game. Like it's some sort of <span class=red-glow>The Hungry Game</span>...",
+        "<b class=ping>@%c</b> hop on the game.",
+        "%c describes this game as \"literally 1984\", despite them never actually reading the book.",
+        "%c takes this opportunity to (strategically) fulfill their childhood dream of climbing a tree.",
+        "%c questions their sanity."
     ],
     "P2PInteractions" : [
         "%a passes %b without realizing it.",
@@ -128,7 +137,7 @@
         "%a loses rock paper scissors against %b!",
         "%a takes refuge in %b's shelter!",
         "%a, do not the %b.",
-        "> %a, minding their business. > %b walks in.",
+        "> %a, minding their business.<br>\t> %b walks in.",
         "%a worships %b as their new god.",
         "%a and %b stab eachother to build up a tolerance.",
         "%a makes %b put on the maid outfit!",
@@ -218,7 +227,7 @@
             "alterKillChance" : -20
         },
         {
-            "text" : "%c has been accused of stealing *the slab*!",
+            "text" : "%c has been accused of stealing <i>the slab</i>!",
             "alterKillChance" : 25
         },
         {
