@@ -66,6 +66,7 @@ img.borderless {
     max-width: 100%;
     background-image: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
     overflow-x:scroll;
+    overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: thin;
     min-height: 50px;
@@ -84,7 +85,6 @@ img.borderless {
     padding-left: 2.5%;
     padding-right: 2.5%;
     text-decoration: none;
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
 }
