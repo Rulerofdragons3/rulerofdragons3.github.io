@@ -59,7 +59,7 @@ img.borderless {
     color:white;
     position: fixed;
     z-index: 10000;
-    display: block;
+    display: flex;
     top: 0;
     right: 0;
     width: 100%;
@@ -67,15 +67,26 @@ img.borderless {
     background-image: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
     overflow-x:scroll;
     white-space: nowrap;
+    scrollbar-width: thin;
+    min-height: 50px;
+    height: 8%;
+    max-height: 75px;
+    justify-content:left;
 }
+
+#navbar-logo {
+    min-width: max-content;
+    align-content: center;
+}
+
 
 .navbar-link {
     padding-left: 2.5%;
     padding-right: 2.5%;
     text-decoration: none;
     cursor: pointer;
-    display: inline-block;
-    line-height:4;
+    display: inline-flex;
+    align-items: center;
 }
 
 .navbar-link:link {
@@ -88,25 +99,30 @@ img.borderless {
     color: lch(from var(--navbar-text-color) calc(l + 20) c h);
 }
 
-.navbar-link:hover {
+.navbar-link:hover, #navbar-logo:hover {
     background-image: linear-gradient(
         0deg,
         var(--color-primary),
         var(--color-secondary)
-        /* 
-        rgb(9, 0, 40),
-        rgb(46, 0, 63)
-        */
         );
     border-radius: 5px;
 }
 
 html {
+    padding-top: 75px;
     background-image: var(--background-image);
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center;
     background-attachment:fixed;
+    background-color:black;
+    scrollbar-color: var(--color-primary) #ff000000;
+    scrollbar-width: none;
+}
+
+/* scrollbar control */
+body {
+    scrollbar-color: var(--color-primary) #ff000000;
 }
 
 .center {
@@ -125,7 +141,7 @@ html {
 main {
     margin: 2.5%;
     padding: 2.5%;
-    padding-top: 8vw;
+    /*padding-top: 8vw;*/
     background-color: var(--page-color);
     border: none;
     border-radius: 5px;
@@ -183,6 +199,13 @@ main {
     overflow-x:scroll;
     padding-left: 1%;
     border-top-right-radius: 15px;
+    scrollbar-width: none;
+}
+
+button.theme-select-button {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 img#theme-select-button {

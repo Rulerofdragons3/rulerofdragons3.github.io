@@ -49,8 +49,8 @@ const themes = {
     },
     nightCity : {
         themeName:"Night",
-        "--color-primary" : "rgb(0, 2, 38)",
-        "--color-secondary": "rgb(0, 84, 133)",
+        "--color-primary" : "rgb(0, 84, 133)",
+        "--color-secondary": "rgb(0, 2, 38)",
         "--color-tertiary": "rgb(0, 34, 62)",
         "--color-accent": "rgb(253, 148, 0)",
         "--text-color-light":"black",
@@ -83,7 +83,7 @@ function buildThemeSelector() {
     const themeSelector = document.getElementById("theme-selector");
     if (!themeSelector) return;
     themeSelector.innerHTML = `
-    <img id="theme-select-button" class = "borderless" src="/assets/Paint-brush.png"></img>
+    <img id="theme-select-button" class = "borderless" src="/assets/paint-brush.png"></img>
     <div id="theme-list" hidden>
     </div>
     `;
@@ -91,7 +91,8 @@ function buildThemeSelector() {
     const themeList = document.getElementById("theme-list");
     Object.keys(themes).forEach((theme) => {
         const themeButton = document.createElement("button");
-        themeButton.textContent = themes[theme].themeName
+        themeButton.textContent = themes[theme].themeName;
+        themeButton.classList = "theme-select-button";
         themeButton.onclick = () => {
             setTheme(theme);
             applyTheme();
