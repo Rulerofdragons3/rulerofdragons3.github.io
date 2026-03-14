@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>404</title>
     <link rel = "stylesheet" href="/css/main.css">
-    <link id="icon" rel="icon" type="image/gif" sizes="32x32" href="https://media1.tenor.com/m/vR1roTDEUPcAAAAC/roblox-baller.gif">
+    <link rel="icon" type="img/png" href="/favicon-32x32.png">
 </head>
 <body>
-<div class="siteContainer">
-<main>
-    <img src="https://media.tenor.com/i2oPdqsIhpsAAAAi/bubu-dudu-sseeyall.gif" class="borderless center" height="450px"></img>
-    <h1 style="text-align: center; font-size: 500%; margin: 0;">404</h1>
-    <p id="message" style="text-align: center;"></p>
-</main>
-<script>
-    const messages = [
-        "How did you get here?",
-        "Why are you here?",
-        "Try a page that exists?",
-        "I'm assuming you just wanted to see what the 404 page looks like.",
-        "'can't seem to find that page.",
-        "Go home lil bro",
-        "This is my 404 page. You like it?",
-        "I think you took a wrong turn.",
-        "I wonder if anyone will ever read this."
-    ];
-    const msg = document.getElementById("message");
-    msg.textContent = messages[Math.floor((Math.random() * messages.length))]
-</script>
-</div>
+    <div id="theme-selector"></div>
+    <div class="siteContainer">
+    <main>
+        <img src="https://media.tenor.com/i2oPdqsIhpsAAAAi/bubu-dudu-sseeyall.gif" class="borderless center" height="450px"></img>
+        <h1 class="center" style="font-size: 500%; margin: 0;">404</h1>
+        <p id="message" class="center"></p>
+        <a href="/"><p class="center">Home</p></a>
+    </main>
+    <script>
+        const messages = [
+            "How did you get here?",
+            "Why are you here?",
+            "Try a page that exists?",
+            "I'm assuming you just wanted to see what the 404 page looks like.",
+            "'can't seem to find that page.",
+            "Go home lil bro",
+            "This is my 404 page. You like it?",
+            "I think you took a wrong turn.",
+            "I wonder if anyone will ever read this."
+        ];
+        const msg = document.getElementById("message");
+        msg.textContent = messages[Math.floor((Math.random() * messages.length))]
+    </script>
+    <script src="/js/main.js"></script>
+    </div>
 </body>

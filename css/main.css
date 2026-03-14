@@ -31,6 +31,10 @@ a {
     color: var(--color-accent);
 }
 
+li {
+    word-wrap: break-word;
+
+}
 
 h1 {
     color: lch(from var(--color-accent) calc(l + 10) c h)
@@ -54,6 +58,11 @@ img {
 img.borderless {
     border-style: none;
 }
+
+aside {
+    float: inline-end;
+}
+
 
 #navbar {
     color:white;

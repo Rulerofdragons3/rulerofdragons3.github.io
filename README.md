@@ -1,3 +1,4 @@
 # rulerofdragons.github.io
 
-Hi this is a
+This is a little experiment of mine to learn the 
+intricacies of web development.

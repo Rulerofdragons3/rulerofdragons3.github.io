@@ -13,8 +13,8 @@
 }
 
 td {
-    color: var(--text-color-light);
-    background-color: var(--text-color-dark);
+    color: var(--text-color-dark);
+    background-color: var(--page-color);
     padding: 10px;
 }
 
