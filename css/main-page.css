@@ -85,17 +85,22 @@ div.contentHolder {
     pointer-events: none;
 }
 
+#confetti-button:hover {
+    cursor: pointer;
+}
+
 /* Cute little boxes!!! */
 div.contentBox {
     border-style: solid;
     border-color: var(--text-color-dark);
     border-radius: 5px;
     padding: 5px;
-    background-image: linear-gradient(white);
+    margin-top: 5px;
+    /*background-image: linear-gradient(white);*/
     /*url("https://static.basicinvite.com/media/bi/33959/patriotic-stars-wallpaper-2x.jpg?q=1742447430");*/
     
     background-color: var(--page-color);
-    background-blend-mode:multiply;
+    /*background-blend-mode:multiply;*/
     background-repeat: repeat;
     background-size:cover;
     display: block;

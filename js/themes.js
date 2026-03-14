@@ -33,7 +33,7 @@ const themes = {
         "--text-color-dark":"rgb(180, 0, 0)",
         "--page-color": "black",
         "--navbar-text-color": "white",
-        "--background-image": "url(\"https://www.shutterstock.com/image-photo/macro-delicious-fresh-red-wet-600nw-2493523223.jpg\")"
+        "--background-image": `url("https://www.shutterstock.com/image-photo/macro-delicious-fresh-red-wet-600nw-2493523223.jpg")`
     },
     verdant : {
         themeName:"Verdant",
@@ -45,10 +45,10 @@ const themes = {
         "--text-color-dark":"black",
         "--page-color": "rgb(185, 255, 190)",
         "--navbar-text-color": "white",
-        "--background-image": "url(\"https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww\")"
+        "--background-image": `url("https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww")`
     },
     nightCity : {
-        themeName:"Night",
+        themeName:"City",
         "--color-primary" : "rgb(0, 84, 133)",
         "--color-secondary": "rgb(0, 2, 38)",
         "--color-tertiary": "rgb(0, 34, 62)",
@@ -57,13 +57,38 @@ const themes = {
         "--text-color-dark":"white",
         "--page-color": "black",
         "--navbar-text-color": "white",
-        "--background-image": "url(\"https://images.pexels.com/photos/3125171/pexels-photo-3125171.jpeg?cs=srgb&dl=pexels-sanaan-3125171.jpg&fm=jpg\")"
+        "--background-image": `url("https://images.pexels.com/photos/3125171/pexels-photo-3125171.jpeg?cs=srgb&dl=pexels-sanaan-3125171.jpg&fm=jpg")`
+    },
+    pink : {
+        themeName:"Kirby",
+        "--color-primary" : "rgb(255, 125, 212)",
+        "--color-secondary": "rgb(113, 0, 100)",
+        "--color-tertiary": "rgb(255, 0, 204)",
+        "--color-accent": "rgb(156, 0, 253)",
+        "--text-color-light":"white",
+        "--text-color-dark":"black",
+        "--page-color": "rgb(255, 231, 247)",
+        "--navbar-text-color": "white",
+        "--background-image": `url("https://s3.amazonaws.com/colorslive/png/5092660-ekSvVrWZwWoto2BO.png")`
+    },
+    flashbang : {
+        themeName:"Flashbang",
+        "--color-primary" : "white",
+        "--color-secondary": "white",
+        "--color-tertiary": "white",
+        "--color-accent": "rgb(225, 225, 225)",
+        "--text-color-light":"rgb(131, 131, 131)",
+        "--text-color-dark":"rgb(225, 225, 225)",
+        "--page-color": "white",
+        "--navbar-text-color": "rgb(131, 131, 131)",
+        "--background-image": `linear-gradient(white)`
     }
 }
 
 function getTheme() {
     const theme = localStorage.getItem("theme");
     if (!theme) return themes.default;
+    if (!(theme in themes)) return themes.default;
     return themes[theme];
 }
 

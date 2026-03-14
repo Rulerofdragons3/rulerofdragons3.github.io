@@ -132,7 +132,7 @@ function generateResults(contestants) {
     } while (remainingEventIDs.length > 0 && contestants.length > 1);
     var finished = false;
     if (contestants.length == 1) {
-        pushToLog(`🏆\t| ${contestants[0].name} wins!`);
+        pushToLog(`🏆\t| <b class="winner">${contestants[0].name}</b> wins! <span class=smalltxt>(Hover to reveal)</span>`);
         finished = true;
     }
     return {

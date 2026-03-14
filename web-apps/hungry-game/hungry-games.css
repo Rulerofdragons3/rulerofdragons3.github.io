@@ -67,3 +67,16 @@ b {
   color: rgb(233, 229, 241);
   border-radius: 5px;
 }
+
+.winner {
+    background-color: orangered;
+    color: orangered;
+}
+
+.winner:hover {
+    background-color: #00000000;
+}
+
+.smalltxt {
+    font-size: 8px;
+}

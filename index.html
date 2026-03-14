@@ -105,11 +105,22 @@
         </div>
         <div class="contentBox">
             <aside>
-                <img id="confetti-button" class="borderless" src="/assets/spamton/spamton.png" width="50px"></img>
+                <img id="confetti-button" class="borderless" src="" width="50px"></img>
             </aside>
+            <script>
+                // This randomizes the look of the "acknowledge" button.
+                const button = document.getElementById("confetti-button");
+                if (Math.floor(Math.random() * 4) == 0) {
+                    button.src = "https://pngimg.com/d/clothes_button_PNG14134.png";
+                }
+                else {
+                    button.src = "https://upload.wikimedia.org/wikipedia/commons/5/5a/Perspective-Button-Stop-icon.png";
+                }
+            </script>
             <p>
-                This site engages with javascript shenanigans.<br>
-                Press the placeholder image to acknowledge.
+                By using this site, you agree to allow javascript
+                to perform various shenanigans.<br>
+                Press the big red button to the right to acknowledge.
             </p>
         </div>
         <div class="contentBox">
@@ -129,8 +140,8 @@
             <p>WIP</p>
         </div>
         <div class="contentBox">
-            <p>lancer.mp3</p>
             <img class="borderless center" src="assets/Lancer_item.gif"></img>
+            <p>lancer.mp3</p>
             <audio 
             src="assets/Music/lancer.mp3"
             controls="true"
@@ -143,6 +154,7 @@
         </div>
         <div class="contentBox">
             <img class="center" src="https://media1.tenor.com/m/g_EYdjqaUQwAAAAd/plantero.gif"></img>
+            <br>
         </div>
     </div>
 </div>

@@ -6,16 +6,34 @@
     <title>404</title>
     <link rel = "stylesheet" href="/css/main.css">
     <link rel="icon" type="img/png" href="/favicon-32x32.png">
+    <style>
+        div#align {
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        div#main {
+            background-color: var(--page-color);
+            width: fit-content;
+            height: fit-content;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="theme-selector"></div>
     <div class="siteContainer">
-    <main>
-        <img src="https://media.tenor.com/i2oPdqsIhpsAAAAi/bubu-dudu-sseeyall.gif" class="borderless center" height="450px"></img>
-        <h1 class="center" style="font-size: 500%; margin: 0;">404</h1>
-        <p id="message" class="center"></p>
-        <a href="/"><p class="center">Home</p></a>
-    </main>
+    <div id="align">
+        <div id="main">
+            <img src="https://media.tenor.com/i2oPdqsIhpsAAAAi/bubu-dudu-sseeyall.gif" class="borderless center" height="450px"></img>
+            <h1 class="center" style="font-size: 500%; margin: 0;">404</h1>
+            <p id="message" class="center"></p>
+            <a href="/"><p class="center">Home</p></a>
+        </div>
+
+    </div>
     <script>
         const messages = [
             "How did you get here?",

@@ -34,6 +34,10 @@ div#spamton-dialogue-box {
     background-color: black;
     border-style: solid;
     border-color: white;
+    max-width: 550px;
+    /* Centers the div */
+    width: 75%;      /* Or any defined width */
+    margin: 0 auto;
 }
 
 img#spamton {
