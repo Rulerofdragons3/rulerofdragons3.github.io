@@ -31,7 +31,7 @@ const themes = {
         "--color-accent": "rgb(255, 153, 153)",
         "--text-color-light":"rgb(52, 0, 0)",
         "--text-color-dark":"rgb(180, 0, 0)",
-        "--page-color": "black",
+        "--page-color": "rgb(18, 0, 0)",
         "--navbar-text-color": "white",
         "--background-image": `url("https://www.shutterstock.com/image-photo/macro-delicious-fresh-red-wet-600nw-2493523223.jpg")`
     },
@@ -70,6 +70,18 @@ const themes = {
         "--page-color": "rgb(255, 231, 247)",
         "--navbar-text-color": "white",
         "--background-image": `url("https://s3.amazonaws.com/colorslive/png/5092660-ekSvVrWZwWoto2BO.png")`
+    },
+    aero : {
+        themeName:"Frutiger Aero",
+        "--color-primary" : "rgba(190, 238, 255, 0.66)",
+        "--color-secondary": "rgb(0, 187, 255)",
+        "--color-tertiary": "rgb(0, 255, 76)",
+        "--color-accent": "rgb(0, 86, 23)",
+        "--text-color-light":"white",
+        "--text-color-dark":"black",
+        "--page-color": "rgba(163, 243, 255, 0.90)",
+        "--navbar-text-color": "white",
+        "--background-image": `url("https://frutigeraeroarchive.org/images/wallpapers/asadal_stock/asadal_stock_15.jpg")`
     },
     flashbang : {
         themeName:"Flashbang",

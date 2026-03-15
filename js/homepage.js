@@ -20,3 +20,17 @@ confettiButton.onclick = () => {
     }, cooldown);
 
 }
+
+/* Quote of the day */
+const quoteHolder = document.getElementById("quoteHolder");
+const today = new Date().getDay(); //0 - Sunday, 6 - Saturday
+const quotes = [
+    "The Lord declared Sundays as days of rest. Take this time to procrastinate.",
+    "It's just another manic monday...",
+    "Did you know Tuesday is statistically the most productive day of the week?",
+    "It's wednesday my dudes.",
+    "With the patience felt with every Thursday, we emerge into Friday.",
+    "It's Friday, Friday, gotta get down on Fridayyy.",
+    "Happy Saturday!"
+];
+quoteHolder.innerHTML = `"${quotes[today]}"`;

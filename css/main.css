@@ -118,7 +118,6 @@ aside {
 }
 
 html {
-    padding-top: 75px;
     background-image: var(--background-image);
     background-repeat:no-repeat;
     background-size:cover;
@@ -131,6 +130,7 @@ html {
 
 /* scrollbar control */
 body {
+    padding-top: 75px;
     scrollbar-color: var(--color-primary) #ff000000;
 }
 

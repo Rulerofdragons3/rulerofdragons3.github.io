@@ -55,15 +55,17 @@ p#spamton-dialogue {
     font-size: large;
 }
 
-main {
-    background-color: darkgreen;
-}
 
-html {
+div#money-rain {
     background-image: url("https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZGpjYW0wODVxaWE2czhrZnRiMDBxYzh0bjhsNjcycW14aWUwdHhybSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/UurMzl2Xbo7AuVigoh/200w.gif");
     background-repeat:repeat;
     background-size:auto;
-    background-position: 0%;
-    background-attachment:scroll;
-    background-color: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:fixed;
+    background-position: center;
+    background-attachment:fixed;
+    z-index: -1;
 }
