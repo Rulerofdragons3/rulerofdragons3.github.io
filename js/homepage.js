@@ -34,3 +34,17 @@ const quotes = [
     "Happy Saturday!"
 ];
 quoteHolder.innerHTML = `"${quotes[today]}"`;
+
+
+/* Message Sending Form */
+function resetForm() {
+    const form = document.getElementById("bootleg-strawpage-form");
+    const button = document.getElementById("form-submit");
+    button.disabled = true;
+    button.textContent = "Sent! 😄"
+    form.reset();
+    setTimeout(() => {
+        button.disabled = false;
+        button.textContent = "Send anonymously ✍️🤫"
+    }, 5000);
+}

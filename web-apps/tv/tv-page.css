@@ -1,0 +1,138 @@
+html {
+    background-color: black;
+}
+
+
+#app-holder {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+/* The television */
+#tv-holder {
+    aspect-ratio: 2355/1463;
+    max-width: 1200px;
+    max-height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+}
+
+#tv {
+    background-image: url("https://www.pngkey.com/png/full/4-42833_old-tv-set-png-old-tv-png-transparent.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    pointer-events: none;
+}
+
+#video {
+    z-index: 1;
+    position:absolute;
+    width: 59%;
+    height: 71.2%;
+    top: 13%;
+    left: 8.8%;
+    aspect-ratio: 425/325;
+    background-color: black;
+}
+
+#channel {
+    position: absolute;
+    color: lime;
+    font-size: 300%;
+    top: 7%;
+    left: 8.8%;
+    width: 57%;
+    height: 71%;
+    z-index: 3;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: right;
+    pointer-events: none;
+}
+
+#static {
+    z-index: 2;
+    position:absolute;
+    width: 59%;
+    height: 71%;
+    top: 13%;
+    left: 8.8%;
+    aspect-ratio: 425/325;
+    background-image: url("https://media1.tenor.com/m/lk5YUP4Co1QAAAAC/static-glitch.gif");
+}
+
+/* The Remote */
+#remote {
+    background-color: rgb(148, 147, 129);
+    width: fit-content;
+    position: absolute;
+    z-index: 4;
+    top:25%;
+    right: 5%;
+    width: 15.5%;
+    height: 28%;
+    border-radius: 5px;
+}
+
+#numpad {
+    display: grid;
+    /* Creates 3 columns, each taking up 1 fractional unit of space */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Creates 4 rows, each taking up 1 fractional unit of space */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-width: 10px;
+    width: 100%;
+    min-height: 10px;
+    height: 90%;
+}
+
+
+.remote-button {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* Cheatily centers the zero at the end */
+.remote-button:last-child {
+  grid-column: 2; 
+}
+
+
+/* Channel guide */
+#channel-guide {
+    position: relative;
+    background-color: navy;
+    margin-top: 62vh;
+    padding: 10px;
+}
+
+#channels {
+    background-color: rgb(120, 120, 120);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+}
+
+h1 {
+    background-color: rgb(120, 120, 120);
+    padding: 10px;
+}
+
+p.guide-element {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1, p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

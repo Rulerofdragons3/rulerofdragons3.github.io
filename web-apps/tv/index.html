@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R3.tv</title>
+    <link rel="stylesheet" href="tv-page.css">
+    <link rel="icon" type="img/png" href="/favicon-32x32.png">
+</head>
+<body>
+    <div id="app-holder">
+        <div id="tv-holder">
+            <iframe 
+            src="" 
+            id="video"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+            ></iframe>
+            <!--div id="video"></div-->
+            <div id="static"></div>
+            <p id="channel">No Signal</p>
+            <div id="tv"></div>
+            <div id="remote">
+                <div id="numpad"></div>
+            </div>
+        </div>
+
+        <div id="channel-guide">
+            <h1>Channel Guide</h1>
+            <div id="channels">
+
+            </div>
+        </div>
+    </div>
+    <p style="color:white;">
+        This is a listing of notable shows and videos 
+        that I've found on the internet. Most content is sourced from
+        youtube, with some from the internet archive.
+        <br>
+        More channels will be added in the future.
+    </p>
+    <a href="/"><img src="/assets/Corner Logo.gif"></img></a>
+
+    <script type="module" src="tv-control.js"></script>
+</body>
+</html>
