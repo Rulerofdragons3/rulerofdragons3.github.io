@@ -37,13 +37,15 @@ quoteHolder.innerHTML = `"${quotes[today]}"`;
 
 
 /* Message Sending Form */
+const form = document.getElementById("bootleg-strawpage-form");
+form.reset();
+form.addEventListener("submit", resetForm);
 function resetForm() {
-    const form = document.getElementById("bootleg-strawpage-form");
     const button = document.getElementById("form-submit");
     button.disabled = true;
     button.textContent = "Sent! 😄"
-    form.reset();
     setTimeout(() => {
+        form.reset();
         button.disabled = false;
         button.textContent = "Send anonymously ✍️🤫"
     }, 5000);
