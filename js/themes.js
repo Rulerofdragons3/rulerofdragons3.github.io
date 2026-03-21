@@ -83,6 +83,18 @@ const themes = {
         "--navbar-text-color": "white",
         "--background-image": `url("https://frutigeraeroarchive.org/images/wallpapers/asadal_stock/asadal_stock_15.jpg")`
     },
+    dorfic : {
+        themeName:"DORFic",
+        "--color-primary" : "rgb(255, 127, 127)",
+        "--color-secondary": "rgb(255, 106, 0)",
+        "--color-tertiary": "rgb(255, 166, 0)",
+        "--color-accent": "rgb(0, 238, 255)",
+        "--text-color-light":"black",
+        "--text-color-dark":"white",
+        "--page-color": "rgba(255, 145, 35, 0.9)",
+        "--navbar-text-color": "white",
+        "--background-image": `url("https://i.pinimg.com/originals/a3/0c/4f/a30c4f26fc435774e54432112e6c48cd.png")`
+    },
     flashbang : {
         themeName:"Flashbang",
         "--color-primary" : "white",

@@ -46,7 +46,7 @@ html {
 #channel {
     position: absolute;
     color: lime;
-    font-size: 300%;
+    font-size: 4vw;
     top: 7%;
     left: 8.8%;
     width: 57%;
@@ -75,7 +75,7 @@ html {
     width: fit-content;
     position: absolute;
     z-index: 4;
-    top:25%;
+    top:24%;
     right: 5%;
     width: 15.5%;
     height: 28%;
@@ -105,12 +105,17 @@ html {
   grid-column: 2; 
 }
 
+p#hint {
+    font-size: small;
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
 
 /* Channel guide */
 #channel-guide {
     position: relative;
     background-color: navy;
-    margin-top: 62vh;
+    margin-top: 58vh;
     padding: 10px;
 }
 
