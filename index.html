@@ -19,6 +19,13 @@
 <div id="siteContainer">
     <div class="contentHolder">
         <!-- This is the left container -->
+         <div class="contentBox" id="newsBox">
+            <h1>Site news!</h1>
+            <p>
+                Balls island demo released! Check it out 
+                <a href="/downloads/BallsIsland/">here!</a>
+            </p>
+        </div>
         <div class="contentBox">
             <h1>Sitemap</h1>
             <!-- -->
@@ -60,6 +67,44 @@
                 </li>
             </menu>
         </div>
+        
+    </div>
+    <div id="mainContainer" class="contentHolder">
+        <!-- This is the middle -->
+        <div class="contentBox">
+            <img src="https://media.tenor.com/FEIo6vWVIOMAAAAi/hi.gif" class=borderless width="300"></img>
+            <p>
+            Hello!!! Welcome to my site! ᕕ( ᐛ )ᕗ<br>
+            I hope you weren't expecting anything professional.
+            I'm still figuring out this HTML stuff.<br>
+            I'll have a cooler page in the future. Trust. 
+            </p>
+        </div>
+        <div class="contentBox">
+            <div class="marquee"> <!-- Hides chicken overflow -->
+                <div class="repeating-chickens"></div>
+            </div>
+        </div>
+        <div class="contentBox">
+            <aside>
+                <img id="confetti-button" class="borderless" src="" width="50px"></img>
+            </aside>
+            <script>
+                // This randomizes the look of the "acknowledge" button.
+                const button = document.getElementById("confetti-button");
+                if (Math.floor(Math.random() * 4) == 0) {
+                    button.src = "/assets/button.png";
+                }
+                else {
+                    button.src = "https://upload.wikimedia.org/wikipedia/commons/5/5a/Perspective-Button-Stop-icon.png";
+                }
+            </script>
+            <p>
+                By using this site, you agree to allow javascript
+                to perform various shenanigans.<br>
+                Press the big red button to the right to acknowledge.
+            </p>
+        </div>
         <div class="contentBox">
             <h2>
                 External Games
@@ -89,59 +134,14 @@
                 <a href="https://www.supergames.com/en/games">here</a>.)
             </p>
         </div>
-    </div>
-    <div id="mainContainer" class="contentHolder">
-        <!-- This is the middle -->
-        <div class="contentBox">
-            <img src="https://media.tenor.com/FEIo6vWVIOMAAAAi/hi.gif" class=borderless width="300"></img>
-            <p>
-            Hello!!! Welcome to my site! ᕕ( ᐛ )ᕗ<br>
-            I hope you weren't expecting anything professional.
-            I'm still figuring out this HTML stuff.<br>
-            I'll have a cooler page in the future. Trust. 
-            </p>
-        </div>
-        <div class="contentBox">
-            <div class="marquee"> <!-- Hides chicken overflow -->
-                <div class="repeating-chickens"></div>
-            </div>
-        </div>
-        <div class="contentBox">
-            <aside>
-                <img id="confetti-button" class="borderless" src="" width="50px"></img>
-            </aside>
-            <script>
-                // This randomizes the look of the "acknowledge" button.
-                const button = document.getElementById("confetti-button");
-                if (Math.floor(Math.random() * 4) == 0) {
-                    button.src = "https://pngimg.com/d/clothes_button_PNG14134.png";
-                }
-                else {
-                    button.src = "https://upload.wikimedia.org/wikipedia/commons/5/5a/Perspective-Button-Stop-icon.png";
-                }
-            </script>
-            <p>
-                By using this site, you agree to allow javascript
-                to perform various shenanigans.<br>
-                Press the big red button to the right to acknowledge.
-            </p>
-        </div>
-        <div class="contentBox">
-            <p>
-                I made this page wayy to big for what I have available
-                on the site.<br> What do I even put here?
-            </p>
-            <img class="center borderless" src="https://media1.tenor.com/m/p2m9SXLn0zwAAAAC/ultrakill-v1.gif"></img>
-        </div>
-        
         
     </div>
     <div class="contentHolder">
         <!-- This is the right container -->
-        <div class="contentBox">
+        <!--div class="contentBox">
             <h1>Site Hits</h1>
-            <p>WIP</p>
-        </div>
+            <script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/1"></script>
+        </div-->
         <div class="contentBox">
             <img class="borderless center" src="assets/Lancer_item.gif"></img>
             <p>lancer.mp3</p>
@@ -164,10 +164,6 @@
                     <button type="submit" id="form-submit">Send anonymously ✍️🤫</button>
                 </form>
             </div>
-        </div>
-        <div class="contentBox">
-            <img class="center" src="https://media1.tenor.com/m/g_EYdjqaUQwAAAAd/plantero.gif"></img>
-            <p class="center">Pantero</p>
         </div>
     </div>
 </div>

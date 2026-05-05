@@ -26,12 +26,12 @@ const quoteHolder = document.getElementById("quoteHolder");
 const today = new Date().getDay(); //0 - Sunday, 6 - Saturday
 const quotes = [
     "The Lord declared Sundays as days of rest. Take this time to procrastinate.",
-    "It's just another manic monday...",
+    "I hate mondays...", //"It's just another manic monday...",
     "Did you know Tuesday is statistically the most productive day of the week?",
     "It's wednesday my dudes.",
-    "With the patience felt with every Thursday, we emerge into Friday.",
-    "It's Friday, Friday, gotta get down on Fridayyy.",
-    "Happy Saturday!"
+    "Although Friday can be seen on the horizon, don't forget to enjoy the gift of Thursday.",
+    "It's Friday! Friday! 'Gotta get down on Fridayyy. Everybody's looking forward to the weekend!",
+    "Take a break today, you earned it."
 ];
 quoteHolder.innerHTML = `"${quotes[today]}"`;
 
@@ -50,3 +50,19 @@ function resetForm() {
         button.textContent = "Send anonymously ✍️🤫"
     }, 5000);
 }
+
+/* Mii news animation */
+const box = document.getElementById("newsBox");
+box.style = `
+background-image: url("https://media1.tenor.com/m/coTPyF4nejIAAAAC/tomodachi-life-mii.gif?t=${new Date().getTime()}");
+height: 250px;
+`;
+box.childNodes.forEach((c) => {
+    c.hidden = true;
+});
+setTimeout(() => {
+    box.style = 'height: 250px;';
+    box.childNodes.forEach((c) => {
+    c.hidden = false;
+    });
+}, 2500)
